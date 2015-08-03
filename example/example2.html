@@ -1,0 +1,62 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="../css/layx.css" />
+
+		<!-- some styling -->
+		<style>
+		.wrapper {
+			background:rgba(0,0,0,0.07);
+			border:1px solid rgba(0,0,0,0.09);
+			border-radius:3px;
+			padding:10px;
+
+			/* width: 80%; */
+			width: 900px;
+		}
+		.content {
+			padding-left:10px;
+			border-left:2px solid rgba(0,0,0,0.1);
+			color:rgba(0,0,0,0.5);
+		}
+		.side {
+			width: 160px;
+			padding-left:5px;
+			padding-right:5px;
+		}
+		nav a { display:block; width: 100%; }
+		</style>
+	</head>
+
+	<div>
+		<div class='wrapper'>
+			<div class='layx fixed-content side'>
+				<b>Nav side</b>
+
+				<nav>
+					<a href='#'>Home</a>
+					<a href='#'>About</a>
+					<a href='#'>Contact</a>
+					<a href='#'>Gallery</a>
+				</nav>
+			</div>
+
+			<!-- 2 dynamic contents are split -->
+			<div class='layx dynamic-content content'> <!-- no lg makes it has less space  -->
+				Welcome to layx example.
+			</div>
+
+			<div class='layx dynamic-content-lg content'> <!-- lg makes it have more space -->
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non luctus purus. Nullam fringilla egestas ex, ut aliquam lectus porttitor at. Proin tempor porta felis. Morbi quis elementum ipsum. Proin molestie pellentesque turpis. Pellentesque id porta neque. Morbi vestibulum vitae risus sit amet commodo. Sed id neque mauris. Integer ut metus imperdiet tellus posuere sodales ut in risus. Nulla pulvinar id tellus vitae suscipit. Vestibulum egestas commodo lorem, vel condimentum augue fringilla eleifend. Vestibulum at est sit amet risus laoreet placerat in sed ante.
+			</div>
+
+			<div class='layx fixed-content side'>
+				<div><b>Another side</b></div>
+				You like cats?
+				<br>
+				<img width='95%' src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Turkish_Van_Cat.jpg/700px-Turkish_Van_Cat.jpg'>
+			</div>
+
+		</div>
+	</div>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="../css/layx.css" />
+
+		<!-- some styling -->
+		<style>
+		.wrapper {
+			background:rgba(0,0,0,0.07);
+			border:1px solid rgba(0,0,0,0.09);
+			border-radius:3px;
+			padding:10px;
+
+			/* width: 80%; */
+			width: 900px;
+
+			width: 80%;
+
+
+		}
+		.content {
+			padding-left:10px;
+			border-left:2px solid rgba(0,0,0,0.1);
+			color:rgba(0,0,0,0.5);
+		}
+		.side {
+			width: 120px;
+			padding-left:5px;
+			padding-right:5px;
+		}
+		nav a { display:block; width: 100%; }
+
+		.row-heading {
+			padding:5px;
+		}
+		.col-dynamic, .col-fixed {
+			padding:5px;
+		}
+		.col-green {
+			background:rgba(0,255,0,0.2);
+			color:rgba(0,0,0,0.5);
+		}
+
+		.special-row {
+			height:60px;
+			background:rgba(255,0,0,0.1);
+			border-top:1px solid rgba(255,0,0,0.12);
+		}
+		</style>
+	</head>
+
+	<div>
+		<div class='wrapper'>
+			<div class='layx fixed-content side'>
+				<b>Nav side</b>
+
+				<nav>
+					<a href='#'>Home</a>
+					<a href='#'>About</a>
+					<a href='#'>Contact</a>
+					<a href='#'>Gallery</a>
+				</nav>
+			</div>
+
+			<!-- 2 dynamic contents are split -->
+			<div class='layx dynamic-content content' style='font-size:12px;'> <!-- no lg makes it has less space  -->
+				Welcome to layx example.
+				<br>
+				<br>
+				This example shows rows/columns and 1 extra side.
+				<br>
+				<br>
+				Try change .wrapper width to 80% to see how nicely it works with dynamic widths.
+			</div>
+
+			<div class='layx dynamic-content-lg content'> <!-- lg makes it have more space -->
+
+				<div class='layx row-wrapper'>
+					<div class='row-heading'>
+						<div class='col-fixed'>Fruit name</div>
+						<div class='col-dynamic'>Color</div>
+						<div class='col-fixed'>Price per 1</div>
+					</div>
+
+					<!-- special row but using row-center so content will be centered -->
+					<div class='row special-row row-centered'>
+						<div class='col-fixed'>Apple</div>
+						<div class='col-dynamic'>Red / Green</div>
+						<div class='col-fixed'>0.15</div>
+					</div>
+
+					<!-- special row but not using row-centered, so content will stay at top -->
+					<div class='row special-row'>
+						<div class='col-fixed'>Banana</div>
+						<div class='col-dynamic'>Yellow / Green</div>
+						<div class='col-fixed'>0.20</div>
+					</div>
+
+					<div class='row'>
+						<div class='col-fixed'>Watermelon</div>
+							<div class='col-dynamic col-green'>Green</div>
+							<div class='col-fixed'>1.0</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class='layx fixed-content side'>
+				<div><b>Another side</b></div>
+				You like cats?
+				<br>
+				<img width='95%' src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Turkish_Van_Cat.jpg/700px-Turkish_Van_Cat.jpg'>
+				<br>
+
+				<img width='95%' src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Turkish_Van_Cat.jpg/700px-Turkish_Van_Cat.jpg'>
+
+			</div>
+
+			<div class='layx fixed-content side'>
+				<div><b>Newsletter</b></div>
+
+				<form>
+					<input type='email' placeholder="Email address">
+					<button type="submit">Sign</button>
+				</form>
+
+			</div>
+
+		</div>
+	</div>
+</html>
